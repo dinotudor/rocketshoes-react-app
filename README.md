@@ -4,4 +4,4 @@
 
 _Part of Rockeseat Bootcamp module 07_
 
-_create using create-react-app_
+_created using `create-react-app`_
