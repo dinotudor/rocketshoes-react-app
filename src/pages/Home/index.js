@@ -10,10 +10,10 @@ export default function Home() {
       <li>
         <img src={tenis} alt="shoe" />
         <strong>Nice shoe</strong>
-
+        <span>$89,99</span>
         <button>
           <div>
-            <MdAddShoppingCart size={16} color="#FFF" />
+            <MdAddShoppingCart size={16} color="#FFF" /> 2
           </div>
           <span>Add to cart</span>
         </button>
@@ -22,10 +22,10 @@ export default function Home() {
       <li>
         <img src={tenis} alt="shoe" />
         <strong>Nice shoe</strong>
-
+        <span>$89,99</span>
         <button>
           <div>
-            <MdAddShoppingCart size={16} color="#FFF" />
+            <MdAddShoppingCart size={16} color="#FFF" /> 2
           </div>
           <span>Add to cart</span>
         </button>
@@ -34,10 +34,10 @@ export default function Home() {
       <li>
         <img src={tenis} alt="shoe" />
         <strong>Nice shoe</strong>
-
+        <span>$89,99</span>
         <button>
           <div>
-            <MdAddShoppingCart size={16} color="#FFF" />
+            <MdAddShoppingCart size={16} color="#FFF" /> 2
           </div>
           <span>Add to cart</span>
         </button>
@@ -46,10 +46,10 @@ export default function Home() {
       <li>
         <img src={tenis} alt="shoe" />
         <strong>Nice shoe</strong>
-
+        <span>$89,99</span>
         <button>
           <div>
-            <MdAddShoppingCart size={16} color="#FFF" />
+            <MdAddShoppingCart size={16} color="#FFF" /> 2
           </div>
           <span>Add to cart</span>
         </button>
@@ -58,10 +58,10 @@ export default function Home() {
       <li>
         <img src={tenis} alt="shoe" />
         <strong>Nice shoe</strong>
-
+        <span>$89,99</span>
         <button>
           <div>
-            <MdAddShoppingCart size={16} color="#FFF" />
+            <MdAddShoppingCart size={16} color="#FFF" /> 2
           </div>
           <span>Add to cart</span>
         </button>
@@ -70,10 +70,10 @@ export default function Home() {
       <li>
         <img src={tenis} alt="shoe" />
         <strong>Nice shoe</strong>
-
+        <span>$89,99</span>
         <button>
           <div>
-            <MdAddShoppingCart size={16} color="#FFF" />
+            <MdAddShoppingCart size={16} color="#FFF" /> 2
           </div>
           <span>Add to cart</span>
         </button>
