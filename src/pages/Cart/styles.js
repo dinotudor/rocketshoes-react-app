@@ -7,7 +7,9 @@ export const Container = styled.div`
 `;
 
 export const ProductTable = styled.table`
-  width: 100% thead th {
+  width: 100%;
+
+  thead th {
     color: #999;
     text-align: left;
     padding: 12px;
@@ -19,6 +21,36 @@ export const ProductTable = styled.table`
   }
   img {
     height: 100px;
+  }
+
+  strong {
+    color: #333;
+    display: block;
+  }
+
+  span {
+    margin-top: 5px;
+    font-size: 18px;
+    font-wight: bold;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    input {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      color: #666;
+      padding: 6px;
+      width: 50px;
+    }
+  }
+
+  button {
+    background: none;
+    border: 0;
+    padding: 6px;
   }
 `;
 
