@@ -3,7 +3,8 @@ import {
   MdRemoveCircleOutline,
   MdAddCircleOutline,
   MdDelete,
-} from 'react-icon/md';
+} from 'react-icons/md';
+import tenis from '../../assets/images/tenis.jpg';
 
 import { Container, ProductTable, Total } from './styles';
 
