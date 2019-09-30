@@ -1,83 +1,40 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { MdAddShoppingCart } from 'react-icons/md';
+import aip from '../../services/api';
 
 import tenis from '../../assets/images/tenis.jpg';
 import { ProductList } from './styles';
 
-export default function Home() {
-  return (
-    <ProductList>
-      <li>
-        <img src={tenis} alt="shoe" />
-        <strong>Nice shoe</strong>
-        <span>$89,99</span>
-        <button>
-          <div>
-            <MdAddShoppingCart size={16} color="#FFF" /> 2
-          </div>
-          <span>Add to cart</span>
-        </button>
-      </li>
+export default class Home extends Component {
+  state = {
+    products: [],
+  };
 
-      <li>
-        <img src={tenis} alt="shoe" />
-        <strong>Nice shoe</strong>
-        <span>$89,99</span>
-        <button>
-          <div>
-            <MdAddShoppingCart size={16} color="#FFF" /> 2
-          </div>
-          <span>Add to cart</span>
-        </button>
-      </li>
+  async componentDidMount() {
+    const response = await api.get('products');
 
-      <li>
-        <img src={tenis} alt="shoe" />
-        <strong>Nice shoe</strong>
-        <span>$89,99</span>
-        <button>
-          <div>
-            <MdAddShoppingCart size={16} color="#FFF" /> 2
-          </div>
-          <span>Add to cart</span>
-        </button>
-      </li>
+    this.setState({ products: response.data });
+  }
 
-      <li>
-        <img src={tenis} alt="shoe" />
-        <strong>Nice shoe</strong>
-        <span>$89,99</span>
-        <button>
-          <div>
-            <MdAddShoppingCart size={16} color="#FFF" /> 2
-          </div>
-          <span>Add to cart</span>
-        </button>
-      </li>
+  render() {
+    const { products } = this.state;
 
-      <li>
-        <img src={tenis} alt="shoe" />
-        <strong>Nice shoe</strong>
-        <span>$89,99</span>
-        <button>
-          <div>
-            <MdAddShoppingCart size={16} color="#FFF" /> 2
-          </div>
-          <span>Add to cart</span>
-        </button>
-      </li>
-
-      <li>
-        <img src={tenis} alt="shoe" />
-        <strong>Nice shoe</strong>
-        <span>$89,99</span>
-        <button>
-          <div>
-            <MdAddShoppingCart size={16} color="#FFF" /> 2
-          </div>
-          <span>Add to cart</span>
-        </button>
-      </li>
-    </ProductList>
-  );
+    return (
+      <ProductList>
+        {products.map(product => (
+          <li key={product.id}>
+            <img src={product.image} alt="Tenis" />
+            <strong>Nice shoe</strong>
+            <span>$89,99</span>
+            <button>
+              <div>
+                <MdAddShoppingCart size={16} color="#FFF" /> 2
+              </div>
+              <span>Add to cart</span>
+            </button>
+          </li>
+        ))}
+      </ProductList>
+    );
+  }
 }
