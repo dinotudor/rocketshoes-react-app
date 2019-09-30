@@ -24,7 +24,7 @@ export default function Cart() {
         <tbody>
           <tr>
             <td>
-              <img src={tenis} al="tenis" />
+              <img src={tenis} al="tenis" alt="tenis" />
             </td>
             <td>
               <strong>Cool tenis</strong>
