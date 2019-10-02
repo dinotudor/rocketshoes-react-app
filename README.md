@@ -17,9 +17,8 @@ _Functionalities:_
 - Remove item
 - Delete item
 
-![App Screenshot1]('./src/assets/images/app-screenShot1.png')
-![App Screenshot2]('./src/assets/images/app-screenShot2.png')
-
+![alt text](https://github.com/dinotudor/rocketshoes-react-app/blob/master/src/assets/images/app-screenShot1.png)
+![alt text](https://github.com/dinotudor/rocketshoes-react-app/blob/master/src/assets/images/app-screenShot2.png)
 _created using `create-react-app`_
 
 after clone, run yarn on root to install dependencies:
